@@ -23,12 +23,12 @@
 
 ## Icon I used for generate App Icon for IOS & android  
 
-- [App icon]()
+- [App icon](https://www.shareicon.net/data/512x512/2016/07/07/116570_brand-l-letter-single_512x512.png?fbclid=IwAR2LCKoyGnR1hcchqUzwLXbrCbYda7kNzTPqYCryiqlU5Q9zsx97cOiz6R0)
 
 ### Download from GitHub
 
 ```bash
-$ git clone 
+$ git clone https://github.com/AbanoubAshraaf/Languing.git
 ```
 
 ```bash
