@@ -1,4 +1,4 @@
-# LearningLanguages
+# Languing
 
 ## Contents
 
@@ -32,7 +32,7 @@ $ git clone https://github.com/AbanoubAshraaf/Languing.git
 ```
 
 ```bash
-$ cd LearningLanguages
+$ cd Languing
 ```
 
 ### Insall all dependencies
