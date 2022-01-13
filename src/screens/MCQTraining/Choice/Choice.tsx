@@ -22,7 +22,6 @@ export const Choice = ({
   );
   const dispatch = useDispatch();
 
- 
   const choicePosition = useRef(new Animated.ValueXY()).current;
 
   const [choiceBackgroundColor, choiceWordColor] = useMemo(() => {

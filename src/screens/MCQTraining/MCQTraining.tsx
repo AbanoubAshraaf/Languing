@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Text, View} from 'react-native';
+import {ActivityIndicator, Text, View} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {ControlButton} from '../../components/ControlButton';
 import {Sentence} from '../../components/Sentence';
@@ -10,9 +10,12 @@ import {styles} from './MCQTraining.styles';
 import firestore from '@react-native-firebase/firestore';
 import {IChoice, IQuestion} from './MCQTraining.interface';
 import {answerActions} from '../../redux/answer/answerActions';
+import {colors} from '../../appStyles/colors';
 
 export const MCQTraining = () => {
   const [answer, setAnswer] = useState<string>(emptyAnswer);
+  const [loading, setLoading] = useState<boolean>(true);
+
   const dashRef = useRef(null);
   const {currentQuestion, selectedID} = useSelector(
     (state: IState) => state.answerReducer,
@@ -32,18 +35,27 @@ export const MCQTraining = () => {
           } as IQuestion);
         });
         dispatch(answerActions.setQuestionList(questions));
+        loading && setLoading(false);
       });
 
     // Stop listening for updates when no longer required
     return () => questionsSubscribe();
   }, []);
 
-  if (!currentQuestion){
+  if (!currentQuestion && !loading) {
     return (
       <View style={styles.container}>
         <Text style={styles.noEnough}>
           Sorry No enough challenge for now :({' '}
         </Text>
+      </View>
+    );
+  }
+
+  if (!currentQuestion && loading) {
+    return (
+      <View style={styles.loaderContainer}>
+        <ActivityIndicator size={25} color={colors.mainThemeForeground} />
       </View>
     );
   }

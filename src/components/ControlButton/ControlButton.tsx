@@ -36,7 +36,6 @@ export const ControlButton = ({correctAnswer, setAnswer}: IProps) => {
   }, [selectedID, checked]);
 
   const checkUserAnswer = () => {
-   
     if (selectedID === correctAnswer.id) {
       dispatch(answerActions.setAnswerState(true));
     } else {
