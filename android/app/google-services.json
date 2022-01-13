@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "517960283011",
+    "project_id": "learninglanguages-bf360",
+    "storage_bucket": "learninglanguages-bf360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517960283011:android:f0a3a9ba8f5cf955f6bcb6",
+        "android_client_info": {
+          "package_name": "com.learninglanguages"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517960283011-i5lnl8npnsb9nfdmo08o1dgddajj7pgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYchPhGILIBtb4FRqKhRxPiSdhSWo_Rbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517960283011-i5lnl8npnsb9nfdmo08o1dgddajj7pgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
