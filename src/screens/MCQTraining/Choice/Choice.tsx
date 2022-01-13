@@ -22,9 +22,7 @@ export const Choice = ({
   );
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    console.log('id', id, word);
-  }, []);
+ 
   const choicePosition = useRef(new Animated.ValueXY()).current;
 
   const [choiceBackgroundColor, choiceWordColor] = useMemo(() => {
@@ -88,9 +86,6 @@ export const Choice = ({
             ) => {
               targetX = -25 - (choiceFX - fx);
               targetY = -15 - (choiceFY - fy);
-              console.log('targetX', targetX);
-              console.log('targetY', targetY);
-
               setTargetXYPostion({x: targetX, y: targetY});
             },
           );
