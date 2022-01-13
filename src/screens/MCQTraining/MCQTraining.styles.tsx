@@ -7,6 +7,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     backgroundColor: colors.mainThemeBackground,
   },
+  loaderContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.mainThemeBackground,
+  },
   subContainer: {
     backgroundColor: colors.mainThemeForeground,
     borderTopEndRadius: 20,
