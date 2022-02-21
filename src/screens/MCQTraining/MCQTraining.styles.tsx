@@ -1,16 +1,16 @@
-import {StyleSheet} from 'react-native';
-import {colors} from '../../appStyles/colors';
+import { StyleSheet } from "react-native";
+import { colors } from "../../appStyles/colors";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-end',
+    justifyContent: "flex-end",
     backgroundColor: colors.mainThemeBackground,
   },
   loaderContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: colors.mainThemeBackground,
   },
   subContainer: {
@@ -19,20 +19,20 @@ export const styles = StyleSheet.create({
     borderTopStartRadius: 20,
   },
   contentContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     paddingHorizontal: 20,
     paddingVertical: 40,
   },
   instruction: {
-    color: '#d5edf1',
+    color: "#d5edf1",
     fontSize: 10,
     marginBottom: 20,
   },
   listContainer: {
     marginTop: 40,
-    flexWrap: 'wrap',
-    flexDirection: 'row',
+    flexWrap: "wrap",
+    flexDirection: "row",
   },
   hiddenDashes: {
     opacity: 0,
@@ -40,17 +40,17 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 25,
     borderRadius: 15,
     backgroundColor: colors.white,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   boldTextStyle: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     color: colors.mainTextColor,
   },
   noEnough: {
     fontSize: 15,
     marginBottom: 100,
-    alignSelf: 'center',
-    textAlign: 'center',
+    alignSelf: "center",
+    textAlign: "center",
   },
 });

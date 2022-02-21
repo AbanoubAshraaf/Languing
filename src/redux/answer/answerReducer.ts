@@ -1,5 +1,5 @@
-import {IAnswerReducerState} from './answer.interface';
-import {answerActions} from './answerActions';
+import { IAnswerReducerState } from "./answer.interface";
+import { answerActions } from "./answerActions";
 
 export class answerReducer {
   static INITIAL_STATE: IAnswerReducerState = {
@@ -12,17 +12,17 @@ export class answerReducer {
 
   static reduce = (
     state = answerReducer.INITIAL_STATE,
-    action: Record<string, any>,
+    action: Record<string, any>
   ) => {
     switch (action.type) {
       case answerActions.SET_SELECTED_ID:
-        return {...state, selectedID: action.id};
+        return { ...state, selectedID: action.id };
 
       case answerActions.SET_ANSWER_STATE:
-        return {...state, answerState: action.answer};
+        return { ...state, answerState: action.answer };
 
       case answerActions.RESET_DATA:
-        return {...answerReducer.INITIAL_STATE};
+        return { ...answerReducer.INITIAL_STATE };
 
       case answerActions.SET_QUESTIONS_LIST:
         return {

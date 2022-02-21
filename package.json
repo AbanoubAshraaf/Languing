@@ -7,6 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "format": "prettier --write \"./**/*.{ts,tsx,js,json,md}\"",
+    "check:format": "prettier --list-different \"./**/*.{ts,tsx,js,json,md}\"",
+    "pre-push": "yarn format",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.ts,.tsx --fix"
   },
@@ -31,6 +34,7 @@
     "@typescript-eslint/parser": "^5.7.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
+    "eslint-plugin-import": "^2.25.4",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.2",

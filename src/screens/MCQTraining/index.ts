@@ -1,1 +1,1 @@
-export * from './MCQTraining';
+export * from "./MCQTraining";

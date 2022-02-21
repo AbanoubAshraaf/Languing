@@ -2,14 +2,13 @@
 
 ## Contents
 
-- [Get Started](#-get-started)
+  - [Get Started](#-get-started)
   - [Used Technologies](#-Used-Technologies)
   - [Donwload From GitHub](#-download-from-bitbucket)
   - [Insall all dependencies](#-insall-all-dependencies)
   - [Install ios PODs](#-Install-ios-PODs)
   - [Run the application](#-Run-the-application)
-  - [Available  Scripts](#-Available-Scripts)
-
+  - [Available Scripts](#-Available-Scripts)
 
 ## Get started:
 
@@ -20,8 +19,7 @@
 - [React Redux](https://react-redux.js.org/)
 - [React Native Firebase](https://rnfirebase.io/)
 
-
-## Icon I used for generate App Icon for IOS & android  
+## Icon I used for generate App Icon for IOS & android
 
 - [App icon](https://www.shareicon.net/data/512x512/2016/07/07/116570_brand-l-letter-single_512x512.png?fbclid=IwAR2LCKoyGnR1hcchqUzwLXbrCbYda7kNzTPqYCryiqlU5Q9zsx97cOiz6R0)
 
@@ -61,23 +59,24 @@ $ yarn ios
 # or
 $ npm run ios
 
-``` 
+```
 
-## Available  Scripts
+## Available Scripts
 
 **Example**
 
 ```bash
 $ yarn ios
+# or
+$ npm run ios
 ```
 
-| Name           | Description                                                                                                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `andorid`      | Run on andorid emulator > the andorid emulator must be pre-starte                                                                                                |
-| `ios`          | Run on IOS emulator                                                                                                                                              |
-| `lint`         | Run `eslint`                                                                                                                                                     |
-| `lint:fix`     | Auto fix eslint`                                                                                                                                                 |
-
+| Name       | Description                                                       |
+| ---------- | ----------------------------------------------------------------- |
+| `andorid`  | Run on andorid emulator > the andorid emulator must be pre-starte |
+| `ios`      | Run on IOS emulator                                               |
+| `lint`     | Run `eslint`                                                      |
+| `lint:fix` | Auto fix eslint`                                                  |
 
 ## File Structure
 
@@ -91,4 +90,3 @@ $ yarn ios
         │   └── index.ts
  * /
 ```
-

@@ -1,23 +1,23 @@
-import React, {useMemo, useState} from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
-import {useDispatch, useSelector} from 'react-redux';
-import {colors} from '../../appStyles/colors';
-import {IState} from '../../redux/answer/answer.interface';
-import {answerActions} from '../../redux/answer/answerActions';
-import {emptyAnswer} from '../../utils/constant';
-import {IProps} from './ControlButton.interface';
-import {styles} from './ControlButton.styles';
+import React, { useMemo, useState } from "react";
+import { Text, TouchableOpacity, View } from "react-native";
+import { useDispatch, useSelector } from "react-redux";
+import { colors } from "../../appStyles/colors";
+import { IState } from "../../redux/answer/answer.interface";
+import { answerActions } from "../../redux/answer/answerActions";
+import { emptyAnswer } from "../../utils/constant";
+import { IProps } from "./ControlButton.interface";
+import { styles } from "./ControlButton.styles";
 
-export const ControlButton = ({correctAnswer, setAnswer}: IProps) => {
+export const ControlButton = ({ correctAnswer, setAnswer }: IProps) => {
   const [checked, setChecked] = useState(false);
-  const {selectedID, answerState} = useSelector(
-    (state: IState) => state.answerReducer,
+  const { selectedID, answerState } = useSelector(
+    (state: IState) => state.answerReducer
   );
   const dispatch = useDispatch();
 
   const [answerStateColor, answerHint] = useMemo(() => {
     if (answerState) {
-      return [colors.lightThemeBackground, 'Great Job'];
+      return [colors.lightThemeBackground, "Great Job"];
     } else if (answerState === false) {
       return [colors.wrongAnswer, `Answer : ${correctAnswer.word}`];
     } else {
@@ -27,11 +27,11 @@ export const ControlButton = ({correctAnswer, setAnswer}: IProps) => {
 
   const [buttonBackgroundColor, buttonTitle] = useMemo(() => {
     if (selectedID && checked) {
-      return [colors.white, 'CONTINUE'];
+      return [colors.white, "CONTINUE"];
     } else if (selectedID && !checked) {
-      return [colors.lightThemeBackground, 'CHECK ANSWER'];
+      return [colors.lightThemeBackground, "CHECK ANSWER"];
     } else {
-      return [colors.shadowThemeForeground, 'CONTINUE'];
+      return [colors.shadowThemeForeground, "CONTINUE"];
     }
   }, [selectedID, checked]);
 
@@ -60,7 +60,8 @@ export const ControlButton = ({correctAnswer, setAnswer}: IProps) => {
             setChecked(true);
             checkUserAnswer();
           }
-        }}>
+        }}
+      >
         <Text style={styles.boldTextStyle(answerStateColor)}>
           {buttonTitle}
         </Text>

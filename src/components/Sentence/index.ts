@@ -1,1 +1,1 @@
-export * from './Sentence';
+export * from "./Sentence";

@@ -1,13 +1,13 @@
-import {StyleSheet} from 'react-native';
-import {colors} from '../../appStyles/colors';
+import { StyleSheet } from "react-native";
+import { colors } from "../../appStyles/colors";
 
 export const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
+    flexDirection: "row",
     // justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 20,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
     height: 40,
   },
   basicTextStyle: {
@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     color: colors.mainTextColor,
   },
   boldTextStyle: {
-    fontWeight: 'bold',
-    textDecorationLine: 'underline',
+    fontWeight: "bold",
+    textDecorationLine: "underline",
   },
 });
