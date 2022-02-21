@@ -1,4 +1,4 @@
-import {ComponentRef} from 'react';
+import { ComponentRef } from "react";
 
 export interface IChoiceProps {
   data: {

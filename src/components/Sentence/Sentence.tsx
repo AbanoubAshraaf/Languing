@@ -1,9 +1,13 @@
-import React from 'react';
-import {Text, View} from 'react-native';
-import {ISentenceProps} from './Sentence.interface';
-import {styles} from './Sentence.styles';
+import React from "react";
+import { Text, View } from "react-native";
+import { ISentenceProps } from "./Sentence.interface";
+import { styles } from "./Sentence.styles";
 
-export const Sentence = ({sentence, targetVocab, children}: ISentenceProps) => {
+export const Sentence = ({
+  sentence,
+  targetVocab,
+  children,
+}: ISentenceProps) => {
   const splitedsentence = sentence.split(targetVocab);
 
   return (

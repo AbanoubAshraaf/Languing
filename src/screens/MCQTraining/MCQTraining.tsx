@@ -1,35 +1,35 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {ActivityIndicator, Text, View} from 'react-native';
-import {useDispatch, useSelector} from 'react-redux';
-import {ControlButton} from '../../components/ControlButton';
-import {Sentence} from '../../components/Sentence';
-import {IState} from '../../redux/answer/answer.interface';
-import {emptyAnswer} from '../../utils/constant';
-import {Choice} from './Choice';
-import {styles} from './MCQTraining.styles';
-import firestore from '@react-native-firebase/firestore';
-import {IChoice, IQuestion} from './MCQTraining.interface';
-import {answerActions} from '../../redux/answer/answerActions';
-import {colors} from '../../appStyles/colors';
+import React, { useEffect, useRef, useState } from "react";
+import { ActivityIndicator, Text, View } from "react-native";
+import { useDispatch, useSelector } from "react-redux";
+import { ControlButton } from "../../components/ControlButton";
+import { Sentence } from "../../components/Sentence";
+import { IState } from "../../redux/answer/answer.interface";
+import { emptyAnswer } from "../../utils/constant";
+import { Choice } from "./Choice";
+import { styles } from "./MCQTraining.styles";
+import firestore from "@react-native-firebase/firestore";
+import { IChoice, IQuestion } from "./MCQTraining.interface";
+import { answerActions } from "../../redux/answer/answerActions";
+import { colors } from "../../appStyles/colors";
 
 export const MCQTraining = () => {
   const [answer, setAnswer] = useState<string>(emptyAnswer);
   const [loading, setLoading] = useState<boolean>(true);
 
   const dashRef = useRef(null);
-  const {currentQuestion, selectedID} = useSelector(
-    (state: IState) => state.answerReducer,
+  const { currentQuestion, selectedID } = useSelector(
+    (state: IState) => state.answerReducer
   );
   const dispatch = useDispatch();
 
   useEffect(() => {
     const questionsSubscribe = firestore()
-      .collection('exercises')
-      .orderBy('createdAt', 'asc')
-      .onSnapshot(querySnapshot => {
+      .collection("exercises")
+      .orderBy("createdAt", "asc")
+      .onSnapshot((querySnapshot) => {
         const questions: IQuestion[] = [];
 
-        querySnapshot.forEach(documentSnapshot => {
+        querySnapshot.forEach((documentSnapshot) => {
           questions.push({
             ...documentSnapshot.data(),
           } as IQuestion);
@@ -46,7 +46,7 @@ export const MCQTraining = () => {
     return (
       <View style={styles.container}>
         <Text style={styles.noEnough}>
-          Sorry No enough challenge for now :({' '}
+          Sorry No enough challenge for now :({" "}
         </Text>
       </View>
     );
@@ -74,7 +74,8 @@ export const MCQTraining = () => {
             <View
               style={
                 selectedID || answer !== emptyAnswer ? styles.hiddenDashes : {}
-              }>
+              }
+            >
               <Text ref={dashRef} style={styles.boldTextStyle}>
                 {answer}
               </Text>

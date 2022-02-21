@@ -1,4 +1,4 @@
 export interface IProps {
-  correctAnswer: {id: string; word: string};
+  correctAnswer: { id: string; word: string };
   setAnswer: (answer: string) => void;
 }

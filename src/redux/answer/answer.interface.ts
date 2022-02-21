@@ -1,4 +1,4 @@
-import {IQuestion} from '../../screens/MCQTraining/MCQTraining.interface';
+import { IQuestion } from "../../screens/MCQTraining/MCQTraining.interface";
 
 export interface IAnswerReducerState {
   selectedID: null | string;

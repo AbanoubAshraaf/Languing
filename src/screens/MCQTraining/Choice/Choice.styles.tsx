@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {colors} from '../../../appStyles/colors';
+import { StyleSheet } from "react-native";
+import { colors } from "../../../appStyles/colors";
 
 export const styles = StyleSheet.create({
   basicTextStyle: {
@@ -13,15 +13,15 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.white,
     // minWidth: 70,
     // maxWidth: 150,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
-  container: index => {
+  container: (index) => {
     return {
-      minWidth: '45%',
-      justifyContent: 'center',
+      minWidth: "45%",
+      justifyContent: "center",
       margin: 5,
-      alignItems: index % 2 === 0 ? 'flex-end' : 'flex-start',
+      alignItems: index % 2 === 0 ? "flex-end" : "flex-start",
     };
   },
 });

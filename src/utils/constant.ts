@@ -1,1 +1,1 @@
-export const emptyAnswer = '______';
+export const emptyAnswer = "______";
