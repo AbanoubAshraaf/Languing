@@ -13,6 +13,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		5098B911F17F739E2BF8B2CF /* libPods-LearningLanguages-LearningLanguagesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18877768C6A7AD1CCD93CE38 /* libPods-LearningLanguages-LearningLanguagesTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8427A0FF27EC0FC100C82680 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8427A0FE27EC0FC100C82680 /* GoogleService-Info.plist */; };
 		A38BD379F6C714C31D3F9C04 /* libPods-LearningLanguages.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5716273CD8EEE0AF5B8438 /* libPods-LearningLanguages.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		2D17D226951C3666518F547E /* Pods-LearningLanguages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningLanguages.debug.xcconfig"; path = "Target Support Files/Pods-LearningLanguages/Pods-LearningLanguages.debug.xcconfig"; sourceTree = "<group>"; };
 		6993CA9099656F5545A5D632 /* Pods-LearningLanguages-LearningLanguagesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningLanguages-LearningLanguagesTests.release.xcconfig"; path = "Target Support Files/Pods-LearningLanguages-LearningLanguagesTests/Pods-LearningLanguages-LearningLanguagesTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LearningLanguages/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8427A0FE27EC0FC100C82680 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FA79C5BC1EB4FA839EEFB5F5 /* Pods-LearningLanguages-LearningLanguagesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningLanguages-LearningLanguagesTests.debug.xcconfig"; path = "Target Support Files/Pods-LearningLanguages-LearningLanguagesTests/Pods-LearningLanguages-LearningLanguagesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 		13B07FAE1A68108700A75B9A /* LearningLanguages */ = {
 			isa = PBXGroup;
 			children = (
+				8427A0FE27EC0FC100C82680 /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -245,6 +248,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				8427A0FF27EC0FC100C82680 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
